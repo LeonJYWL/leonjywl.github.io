@@ -28,7 +28,7 @@ Pull Request 不会自动替换正式网站。审核时可在 PR 的 **Files cha
 2. 在 `index.html` 找到所属分类（`finance`、`technology` 或 `society`），复制现有的 `<article class="report-card">…</article>` 到该分类中。
 3. 修改档案编号、标题、简介、主题、研究期间及文件链接。为标题设置唯一的 `id`（如 `report-002-title`），并同步修改卡片的 `aria-labelledby`。
 4. PDF 链接保留 `target="_blank" rel="noopener noreferrer"`；数据下载保留 `download`。没有数据文件时删除对应按钮，不要保留无效链接。
-5. 更新该分类的篇数。如果是分类首篇研究，参考金融分类结构移除“暂无已发布研究”的空状态，并加入真实报告卡片；不要为未发布研究编造内容。
+5. 更新该分类的篇数。如果是分类首篇研究，参考金融分类结构移除 `empty-category` 类与“暂无已发布研究”的空状态，并加入真实报告卡片；不要为未发布研究编造内容。
 6. 在独立分支预览并检查链接后，通过 Pull Request 审核发布。
 
 静态 HTML 保证关闭 JavaScript 后报告与导航仍可使用。报告数量增加后，可再考虑自动生成目录；目前无需安装工具或维护复杂框架。

@@ -13,9 +13,16 @@
       margin: 0;
       padding: 60px 24px;
     }
-    main { max-width: 760px; margin: auto; }
+
+    main {
+      max-width: 760px;
+      margin: auto;
+    }
+
     h1 { font-size: 36px; }
+
     .subtitle { color: #777; }
+
     .card {
       background: white;
       padding: 28px;
@@ -23,20 +30,66 @@
       margin-top: 30px;
       border: 1px solid #e5e7eb;
     }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #233b60;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .button:hover { background: #365d91; }
+
+    .secondary { background: #596579; }
+    .secondary:hover { background: #707d91; }
   </style>
 </head>
+
 <body>
   <main>
     <h1>Leon's Research Library</h1>
-    <p class="subtitle">Research · Finance · Technology · Ideas</p>
+    <p class="subtitle">
+      Research · Finance · Technology · Ideas
+    </p>
+
     <p>欢迎来到我的个人研究图书馆。</p>
     <p>这里记录我的学习、研究与思考。</p>
 
     <div class="card">
       <h2>研究档案 001</h2>
       <h3>中国四大房地产企业的财务故事</h3>
-      <p>恒大、碧桂园、万科与万达的商业模式、现金流与债务研究。</p>
-      <p>📚 研究报告即将上线</p>
+
+      <p>
+        通过恒大、碧桂园、万科与万达的历史财报，
+        探索商业模式、盈利能力、经营现金流与债务风险。
+      </p>
+
+      <p>研究期间：2013—2015年</p>
+
+      <div class="buttons">
+        <a class="button"
+           href="./中国四家房企财务故事（2013-2015） .pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          📖 阅读 PDF 报告
+        </a>
+
+        <a class="button secondary"
+           href="./四家房企财务数据.xlsx"
+           download>
+          📊 下载 Excel 数据
+        </a>
+      </div>
     </div>
   </main>
 </body>

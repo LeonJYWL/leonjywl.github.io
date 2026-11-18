@@ -35,11 +35,21 @@
     </div>
 
     <div class="experiment-context experiment-section">
-      <section aria-labelledby="background-title" class="experiment-section">
-        <div class="section-heading"><h2 id="background-title">测试背景</h2></div>
-        <p class="experiment-copy">2024 年 10 月 25 日，Simon Willison 分享了鹈鹕测试，请不同模型用 SVG 画骑自行车的鹈鹕。他喜欢鹈鹕，也猜测现成的同类 SVG 很少。题目简短而具体，能直观呈现模型如何组织图形、处理鹈鹕与车座和踏板的空间关系，以及生成可渲染的代码。这是一项非正式评测，综合能力仍需结合其他任务判断。本次实验在原始 SVG 绘画测试的基础上加入 HTML 和 2D 动画要求。</p>
-        <p class="experiment-source"><a href="https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/">原文 · Simon Willison《Pelicans on a bicycle》</a></p>
-      </section>
+      <div>
+        <section aria-labelledby="background-title">
+          <div class="section-heading"><h2 id="background-title">测试背景</h2></div>
+          <p class="experiment-copy">2024 年 10 月 25 日，Simon Willison 分享了鹈鹕测试，请不同模型用 SVG 画骑自行车的鹈鹕。他喜欢鹈鹕，也猜测现成的同类 SVG 很少。题目简短而具体，能直观呈现模型如何组织图形、处理鹈鹕与车座和踏板的空间关系，以及生成可渲染的代码。这是一项非正式评测，综合能力仍需结合其他任务判断。本次实验在原始 SVG 绘画测试的基础上加入 HTML 和 2D 动画要求。</p>
+          <p class="experiment-source"><a href="https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/">原文 · Simon Willison《Pelicans on a bicycle》</a></p>
+        </section>
+        <section class="experiment-journal" aria-labelledby="journal-title">
+          <h2 id="journal-title">实验手记｜为什么做这次测试</h2>
+          <p>最近，我开始更加系统地学习和使用 AI，也逐渐对不同大模型之间的差异产生了兴趣。</p>
+          <p>在了解到“鹈鹕骑自行车”这个有趣的测试后，我决定亲自尝试一次：给两个模型完全相同的指令，看看它们会交出怎样不同的作品。</p>
+          <p>结果比我预想的更有意思。两个模型都完成了任务，但在动画表现、交互设计和创意扩展方面，却呈现出明显不同的思路。这让我开始思考：同样的任务，模型对“完成”的理解是否也有所不同？</p>
+          <p>于是，我决定把这次实验的原始作品保留下来，放进自己的研究图书馆。</p>
+          <p>这不是一次严格的模型能力评测，也不是为了给模型排出高下，而是我在学习 AI 过程中的一次真实尝试。我希望把这样的探索记录下来，也让来到这里的人能够亲自体验，并形成自己的判断。</p>
+        </section>
+      </div>
 
       <section aria-labelledby="method-title" class="experiment-section">
         <div class="section-heading"><h2 id="method-title">实验模型与 Prompt</h2></div>

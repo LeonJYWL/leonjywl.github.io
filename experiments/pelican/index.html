@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="对比 GPT-6.2 Astra 与 Gemini 4 Argon 在相同提示词下生成的鹈鹕骑自行车 SVG 动画。">
+  <meta name="color-scheme" content="light">
+  <title>Experiment 001 — Pelican Test | Leon's Research Library</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/experiments.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <header class="site-header container">
+    <a class="brand" href="../../index.html" aria-label="Leon's Research Library 首页">
+      <span class="brand-mark" aria-hidden="true">L<span>r</span></span>
+      <span>Leon's Research Library</span>
+    </a>
+    <nav class="main-nav" aria-label="主要导航">
+      <a href="../../index.html#home">首页</a>
+      <a href="../../index.html#research">研究档案</a>
+      <a href="../../index.html#ai-experiments">AI Experiments</a>
+      <a href="../../index.html#about">关于本站</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <div class="experiment-header">
+      <p class="section-label">AI Experiments · AI 实验室</p>
+      <h1>Experiment 001 — Pelican Test</h1>
+      <div class="experiment-meta">
+        <p>鹈鹕骑自行车测试</p>
+        <a href="#demos">观看交互动画 <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <div class="experiment-context experiment-section">
+      <div>
+        <section aria-labelledby="background-title">
+          <div class="section-heading"><h2 id="background-title">测试背景</h2></div>
+          <p class="experiment-copy">2024 年 10 月 25 日，Simon Willison 分享了鹈鹕测试，请不同模型用 SVG 画骑自行车的鹈鹕。他喜欢鹈鹕，也猜测现成的同类 SVG 很少。题目简短而具体，能直观呈现模型如何组织图形、处理鹈鹕与车座和踏板的空间关系，以及生成可渲染的代码。这是一项非正式评测，综合能力仍需结合其他任务判断。本次实验在原始 SVG 绘画测试的基础上加入 HTML 和 2D 动画要求。</p>
+          <p class="experiment-source"><a href="https://simonwillison.net/2024/Oct/25/pelicans-on-a-bicycle/">原文 · Simon Willison《Pelicans on a bicycle》</a></p>
+        </section>
+        <section class="experiment-journal" aria-labelledby="journal-title">
+          <h2 id="journal-title">实验手记｜为什么做这次测试</h2>
+          <p>最近，我开始更加系统地学习和使用 AI，也逐渐对不同大模型之间的差异产生了兴趣。</p>
+          <p>在了解到“鹈鹕骑自行车”这个有趣的测试后，我决定亲自尝试一次：给两个模型完全相同的指令，看看它们会交出怎样不同的作品。</p>
+          <p>结果比我预想的更有意思。两个模型都完成了任务，但在动画表现、交互设计和创意扩展方面，却呈现出明显不同的思路。这让我开始思考：同样的任务，模型对“完成”的理解是否也有所不同？</p>
+          <p>于是，我决定把这次实验的原始作品保留下来，放进自己的研究图书馆。</p>
+          <p>这不是一次严格的模型能力评测，也不是为了给模型排出高下，而是我在学习 AI 过程中的一次真实尝试。我希望把这样的探索记录下来，也让来到这里的人能够亲自体验，并形成自己的判断。</p>
+        </section>
+      </div>
+
+      <section aria-labelledby="method-title" class="experiment-section">
+        <div class="section-heading"><h2 id="method-title">实验模型与 Prompt</h2></div>
+        <table class="experiment-table" aria-label="实验模型与运行配置">
+          <thead><tr><th scope="col">项目</th><th scope="col">OpenAI</th><th scope="col">Google</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">模型名称</th><td>GPT-6.2 Astra</td><td>Gemini 4 Argon</td></tr>
+            <tr><th scope="row">开发机构</th><td>OpenAI</td><td>Google DeepMind</td></tr>
+            <tr><th scope="row">首次公开公布</th><td><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol/"><time datetime="2026-11-17">2026-11-17</time></a></td><td><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"><time datetime="2026-09-30">2026-09-30</time></a></td></tr>
+            <tr><th scope="row">早期开放</th><td>日期未核实</td><td>公告时已开始向 Fairwind 计划受邀对象开放</td></tr>
+            <tr><th scope="row">正式发布</th><td><time datetime="2026-11-17">2026-11-17</time> · API 及符合资格的 Codex、ChatGPT Work 用户</td><td><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"><time datetime="2026-10-13">2026-10-13</time></a> · Gemini 订阅用户与 API 等渠道</td></tr>
+            <tr><th scope="row">本次使用平台</th><td>Codex</td><td>Gemini</td></tr>
+            <tr><th scope="row">推理配置</th><td>High</td><td>未记录</td></tr>
+            <tr><th scope="row">实验日期</th><td><time datetime="2026-11-18">2026-11-18</time></td><td><time datetime="2026-11-18">2026-11-18</time></td></tr>
+          </tbody>
+        </table>
+        <blockquote class="experiment-prompt"><p>创建一个HTML，内容是SVG绘制一个鹈鹕骑自行车的2D动画。</p></blockquote>
+        <p class="experiment-note">两款模型使用同一 Prompt。这里展示各自第一次生成的原始作品，未经人工修改或二次优化。</p>
+      </section>
+    </div>
+
+    <section id="demos" class="experiment-section" aria-labelledby="demos-title">
+      <div class="section-heading"><h2 id="demos-title">原始作品</h2></div>
+      <div class="experiment-frames">
+        <article class="experiment-frame experiment-frame--gpt" aria-labelledby="gpt-title">
+          <header class="experiment-frame-header">
+            <h3 id="gpt-title">GPT-6.2 Astra (High)</h3>
+            <div class="experiment-frame-actions">
+              <button type="button" aria-controls="gpt-animation" aria-label="全屏体验 GPT-6.2 Astra 动画" hidden>全屏体验</button>
+              <a href="./pelican-gpt-6-2-astra-high-2026-11-18.html" target="_blank" rel="noopener noreferrer">单独打开 <span aria-hidden="true">↗</span><span class="sr-only"> GPT-6.2 Astra 动画（新窗口打开）</span></a>
+            </div>
+          </header>
+          <iframe id="gpt-animation" title="GPT-6.2 Astra (High) 的鹈鹕骑行 SVG 动画" src="./pelican-gpt-6-2-astra-high-2026-11-18.html" sandbox="allow-scripts"></iframe>
+          <p class="experiment-note experiment-fullscreen-status" role="status"></p>
+        </article>
+        <article class="experiment-frame experiment-frame--gemini" aria-labelledby="gemini-title">
+          <header class="experiment-frame-header">
+            <h3 id="gemini-title">Gemini 4 Argon</h3>
+            <div class="experiment-frame-actions">
+              <button type="button" aria-controls="gemini-animation" aria-label="全屏体验 Gemini 4 Argon 动画" hidden>全屏体验</button>
+              <a href="./pelican-gemini-4-argon-2026-11-18.html" target="_blank" rel="noopener noreferrer">单独打开 <span aria-hidden="true">↗</span><span class="sr-only"> Gemini 4 Argon 动画（新窗口打开）</span></a>
+            </div>
+          </header>
+          <iframe id="gemini-animation" title="Gemini 4 Argon 的鹈鹕骑行 SVG 动画" src="./pelican-gemini-4-argon-2026-11-18.html" sandbox="allow-scripts" aria-describedby="gemini-network"></iframe>
+          <p class="experiment-note experiment-fullscreen-status" role="status"></p>
+        </article>
+      </div>
+      <p id="gemini-network" class="experiment-note experiment-frame-note">Gemini 作品的样式和字体需要联网加载 Tailwind CDN 与 Google Fonts。车铃音效由浏览器合成，点击车铃按钮即可触发。</p>
+    </section>
+
+    <section class="experiment-section" aria-labelledby="comparison-title">
+      <div class="section-heading"><h2 id="comparison-title">作品比较与结论</h2></div>
+      <table class="experiment-table" aria-label="两个原始动画的功能与表现比较">
+        <thead><tr><th scope="col">维度</th><th scope="col">GPT-6.2 Astra</th><th scope="col">Gemini 4 Argon</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">基础任务完成度</th><td>完成</td><td>完成</td></tr>
+          <tr><th scope="row">SVG 动画生成</th><td>完成</td><td>完成</td></tr>
+          <tr><th scope="row">播放与暂停</th><td>支持</td><td>支持</td></tr>
+          <tr><th scope="row">速度调节</th><td>0.5×、1×、1.5×</td><td>0.2× 至 2.8× 滑块及冲刺加速</td></tr>
+          <tr><th scope="row">环境变化</th><td>单一海岸场景，背景随骑行移动</td><td>晴日、晚霞、星夜</td></tr>
+          <tr><th scope="row">额外交互</th><td>播放、暂停与调速</td><td>投喂飞鱼、车铃、船长帽与音效开关</td></tr>
+          <tr><th scope="row">创意扩展</th><td>侧重循环骑行与海岸画面</td><td>增加可切换场景和多种互动</td></tr>
+          <tr><th scope="row">代码结构</th><td>更精简，自包含</td><td>包含场景状态、粒子效果与 Web Audio，结构更复杂</td></tr>
+          <tr><th scope="row">外部依赖</th><td>无</td><td>Tailwind CDN、Google Fonts</td></tr>
+          <tr><th scope="row">整体可玩性</th><td>以观看和播放控制为主</td><td>本次实验中可玩性更突出</td></tr>
+        </tbody>
+      </table>
+      <p class="experiment-conclusion">两款模型均完成了基础任务。GPT-6.2 Astra 的实现更加精简、自包含；Gemini 4 Argon 则主动增加了丰富的场景交互，在本次单次实验的创意扩展与可玩性方面表现更突出。</p>
+      <p class="experiment-note">表中的功能与依赖依据原始代码核对。代码长短和功能数量只描述本次作品。实验仅代表特定 Prompt 下的一次实际输出，不构成模型综合能力排名。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Leon's Research Library</p>
+    <a href="../../index.html">返回研究图书馆首页 <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <script>
+    if (document.fullscreenEnabled) {
+      document.querySelectorAll('.experiment-frame-actions button').forEach((button) => {
+        const frame = document.getElementById(button.getAttribute('aria-controls'));
+        const status = frame.nextElementSibling;
+        if (typeof frame.requestFullscreen !== 'function') return;
+
+        button.hidden = false;
+        button.addEventListener('click', async () => {
+          status.textContent = '';
+          try {
+            await frame.requestFullscreen();
+          } catch {
+            status.textContent = '无法进入全屏，请使用「单独打开」。';
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>

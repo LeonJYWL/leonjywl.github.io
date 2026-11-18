@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>海岸骑行 · 鹈鹕骑自行车</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f1e5;color:#193f40;font-family:"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;min-height:100svh;display:grid;place-items:center}main{width:min(1180px,95vw);padding:22px 0}.frame{border:2px solid #193f40;border-radius:12px;overflow:hidden;background:#f7eed4;box-shadow:0 4px 0 #193f40}svg.scene{width:100%;height:auto;display:block}.bar{display:flex;align-items:center;gap:20px;padding:11px 19px;border-top:2px solid #193f40;background:#fcf8ea;font:600 12px ui-monospace,monospace}button{color:inherit;background:transparent;border:1px solid #53716a;border-radius:20px;cursor:pointer;font:inherit;padding:7px 14px}button:hover{background:#e2e8d6}button:focus-visible{outline:3px solid #c95732;outline-offset:2px}.track{flex:1;height:4px;border-radius:4px;background:#d9d8c6;overflow:hidden}.fill{height:100%;background:#d46443;transform-origin:left}#clock{font-variant-numeric:tabular-nums;white-space:nowrap}.title{font:900 66px "Songti SC","STSong","Noto Serif CJK SC",serif;letter-spacing:6px}.en{font:bold 14px Georgia,serif;letter-spacing:3.5px}@media(max-width:600px){main{width:98vw}.bar{gap:8px;padding:9px}.bar button{padding:6px 10px}.frame{border-radius:7px}}
+</style><main><div class="frame">
+<svg id="scene" class="scene" viewBox="0 0 1100 570" role="img" aria-labelledby="desc" xmlns="http://www.w3.org/2000/svg"><title id="desc">一只白鹈鹕系着红围巾，骑着绿色自行车沿海岸公路前行，远处有灯塔和帆船。</title>
+<defs>
+<pattern id="water" width="108" height="24" patternUnits="userSpaceOnUse"><path d="M2 8h31m8 0h8m16 10h24" stroke="#659a88" stroke-width="1.8" stroke-linecap="round"/></pattern>
+<pattern id="grit" width="87" height="49" patternUnits="userSpaceOnUse"><path d="M7 12h2m40 22h5m27-29h1m-47 13h3" stroke="#7a7860" opacity=".45" stroke-width="1.4" stroke-linecap="round"/></pattern>
+<filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".73" numOctaves="3" stitchTiles="stitch"/></filter>
+<g id="cloud" fill="#fff9e6" stroke="#c6cbb4" stroke-width="1.5"><path d="M0 25q8-11 21-8 5-19 23-16 14 1 19 15 15-4 24 9z"/></g>
+<g id="gull" fill="none" stroke="#51665a" stroke-width="2.5" stroke-linecap="round"><path d="M0 0q9-4 15 5 4-9 15-9"/></g>
+<g id="coast"><path fill="#a1b6a0" d="M0 341v-17l47-6 31-10 39 4 46-16 62 12 27 13 69 16 62 9z"/><path fill="#718d79" d="m0 322 50-3 29-9-15 13 49-6 51-19-18 16 42-8 21 6-49 14 75-5 53 11-116 9H0z"/>
+<g transform="translate(100 237)" stroke="#3c5750" stroke-width="1.8"><path d="m-12 72 6-54H7l7 54z" fill="#fbf0d8"/><path d="m-9 42 1-11H9l1 11zm-2 21 1-10h21l1 10" fill="#c7654b" stroke="none"/><path fill="#f2cd80" d="M-6 18V6H7v12z"/><path d="M-10 6 0-1 11 6zM-9 19H10M0-1v-5" fill="#375653"/><path d="M0 8v8m0 50v5"/></g></g>
+<g id="wheel" stroke="#183d3d"><circle r="73" fill="#f8eecf" fill-opacity=".18" stroke-width="10"/><circle r="67" fill="none" stroke="#f7edc9" stroke-width="3"/><g id="spokes" stroke-width="1.8" opacity=".88"></g><circle r="6" fill="#ebb94f" stroke-width="3"/></g>
+<g id="bike" fill="none" stroke-linecap="round" stroke-linejoin="round"><path id="tubes" d="m414 425 86-89 49 89zM500 336l166-23-117 112m-49-89-9-29m173-7 55 125"/><use href="#tubes" stroke="#183d3d" stroke-width="12"/><use href="#tubes" stroke="#438c7c" stroke-width="6"/><path d="m666 314-8-33 26-11 11-18" stroke="#1b4040" stroke-width="7"/><path d="m686 267 10-17" stroke="#a55436" stroke-width="8"/><path d="M466 302q-10 4-1 10 17 6 31-1l21-3q6-5-2-6z" fill="#b45d3d" stroke="#193f40" stroke-width="3"/><path d="M408 417q-10 8 2 16l137 10q22 0 21-20-1-18-21-17z" fill="#d7d6b9" stroke="#193f40" stroke-width="3"/><circle cx="549" cy="425" r="14" fill="#f0c466" stroke="#193f40" stroke-width="3"/></g>
+</defs>
+<rect width="1100" height="570" fill="#f7efd9"/>
+<circle cx="861" cy="109" r="52" fill="#e9b651"/><g id="sky"><use href="#cloud" x="453" y="68"/><use href="#cloud" transform="translate(906 142) scale(1.35 .85)"/><use href="#cloud" transform="translate(245 201) scale(.72)"/><use href="#gull" x="760" y="98"/><use href="#gull" transform="translate(800 121) scale(.63)"/></g>
+<g fill="#1b4140"><text x="43" y="99" class="title">海岸骑行</text><path d="M48 124h32" stroke="#c06041" stroke-width="3"/><text x="93" y="129" class="en">PELICAN ON WHEELS</text></g>
+<rect y="330" width="1100" height="76" fill="#a9cabb"/><path d="M0 330h1100" stroke="#6f9c8a" stroke-width="2"/><g id="waves"><rect x="-10" y="335" width="1350" height="75" fill="url(#water)"/></g><g id="land"><use href="#coast"/><use href="#coast" x="1100"/></g>
+<g id="boat" transform="translate(896 348)" stroke-linejoin="round"><path d="M0-35v35h-21z" fill="#fff5d9" stroke="#738d7f"/><path d="M4-26 18-2H4z" fill="#ce7553"/><path d="m-23 1 44-1-7 6h-28z" fill="#456c62"/></g>
+<path d="M0 396q150-6 310-2t270 0 520-3v179H0z" fill="#e5ca9c"/><path d="M0 406q170-8 365-3t735-3" fill="none" stroke="#bd9c71" stroke-width="2"/><g id="road"><rect x="-10" y="405" width="1400" height="165" fill="url(#grit)"/></g>
+<ellipse cx="562" cy="503" rx="203" ry="8" fill="#897e58" opacity=".28"/>
+<g transform="translate(414 425)"><g id="rear"><use href="#wheel"/></g></g><g transform="translate(719 425)"><g id="front"><use href="#wheel"/></g></g>
+<g id="farLeg" fill="none" stroke="#8d623d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></g>
+<use href="#bike" stroke="#193f40"/>
+<g id="nearLeg" stroke-linecap="round" stroke-linejoin="round"><path id="crank" fill="none" stroke="#193f40" stroke-width="7"/><path id="legBorder" fill="none" stroke="#294541" stroke-width="10"/><path id="leg" fill="none" stroke="#e7a14a" stroke-width="5"/><path id="foot" fill="#eda34c" stroke="#294541" stroke-width="3"/><path id="pedal" stroke="#254440" stroke-width="6"/></g>
+<g id="bird" stroke="#234341" stroke-linejoin="round" stroke-linecap="round" stroke-width="3.5">
+<!-- Tail feathers, breast and long folded neck -->
+<path d="M487 263q-47-1-86-25 5 15 25 27-26-4-40-11 10 20 44 31-12 0-22-3 27 25 69 17z" fill="#e5dfc5"/>
+<path d="M419 264q35 4 63-14 24-15 49-21 20-7 23-29l5-40q3-32 27-40l-4-6 14 4-1-7 12 7q23 3 30 22l-1 21q-2 19-15 27-11 9-11 33 2 40-26 66-30 29-77 18-48-8-88-41z" fill="#fff6dd"/>
+<path d="M435 272q62 36 103 18 45-17 55-66 0 49-38 71-48 26-101-7z" fill="#d9d8be" stroke="none"/>
+<path d="M609 160q-8 7-8 19m-4 10q-3 7-2 16" fill="none" stroke="#bbc3ac" stroke-width="2"/>
+<!-- Distinctive long bill and expandable throat pouch -->
+<path d="M623 147q38 4 74 15l79 24q-3 15-18 21-38 17-85 2-29-10-50-38-9-11 0-24z" fill="#eaa14f"/>
+<path d="M644 172q36 35 93 33m-77-31q32 24 67 26" fill="none" stroke="#ce8240" stroke-width="2"/>
+<path d="M622 144q43 1 98 20l53 17q13 4 5 14l-5 4-1-8q-65-9-119-21-25-5-33-13z" fill="#f5c271"/><path d="m637 151 11 2" fill="none" stroke-width="2"/>
+<circle cx="612" cy="139" r="8.5" fill="#f1d78c" stroke-width="2"/><circle cx="614" cy="139" r="4.3" fill="#1e3837" stroke="none"/><circle cx="615" cy="137" r="1.4" fill="white" stroke="none"/>
+<!-- Windblown neckerchief -->
+<path d="M556 203q-25 9-54-1-14-5-29-1l11 7-14 7q26-4 43 3 21 7 46-4z" fill="#c95c40"/><path d="M555 199q24 11 53 6l-2 12q-25 5-54-8z" fill="#dc7048"/><path d="m552 199 11 3-5 12-11-6z" fill="#b74e37"/>
+<!-- Wing reaching forward to the handlebars -->
+<path d="M493 253q21-23 52-15 16 4 37 16 40 23 94 11 11-3 15 0-2 9-18 12 5 1 8 1-4 8-27 9-34 5-69-4-34-9-65-8-19 0-27-9" fill="#f6edd2"/>
+<path d="M548 252q47 32 111 24m-119-15q33 19 63 21" fill="none" stroke="#b6bba4" stroke-width="2.3"/></g>
+<rect width="1100" height="570" filter="url(#paper)" opacity=".075" pointer-events="none" style="mix-blend-mode:multiply"/></svg>
+<div class="bar"><button id="toggle" aria-label="暂停动画">Ⅱ　暂停</button><div class="track"><div class="fill" id="fill"></div></div><span id="clock">00:00 / 00:12</span><button id="speed" aria-label="切换播放速度">1×</button></div></div></main>
+<script>
+const el=id=>document.getElementById(id), ns='http://www.w3.org/2000/svg';
+for(let i=0;i<12;i++){const line=document.createElementNS(ns,'path');line.setAttribute('d','M0 -66V66');line.setAttribute('transform','rotate('+i*15+')');el('spokes').append(line)}
+let time=0,last=null,rate=1,playing=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+const move=(id,x,y)=>el(id).setAttribute('transform','translate('+x+' '+y+')');
+function render(){
+ const phase=time/12*Math.PI*2,a=phase*8, bob=Math.cos(a*2)*1.7;
+ for(const id of ['rear','front'])el(id).setAttribute('transform','rotate('+time*120+')');
+ move('bird',0,bob);move('road',-(time*174%87),0);move('waves',-time*9,0);move('land',-time/12*1100,0);move('sky',Math.sin(phase)*10,0);move('boat',896-12*Math.sin(phase),348+1.4*Math.sin(phase*4));
+ function pose(angle){const x=549+24*Math.cos(angle),y=425+24*Math.sin(angle),hx=516,hy=298+bob;
+ const dx=x-hx,dy=y-hy,d=Math.hypot(dx,dy),u=(78*78-82*82+d*d)/(2*d),v=Math.sqrt(Math.max(0,78*78-u*u));
+ return {x,y,line:'M'+hx+' '+hy+'L'+(hx+(u*dx+v*dy)/d)+' '+(hy+(u*dy-v*dx)/d)+' '+x+' '+(y-4)}}
+ const p=pose(a),q=pose(a+Math.PI);farPath.setAttribute('d',q.line+'l12 3');
+ for(const id of ['leg','legBorder'])el(id).setAttribute('d',p.line);
+ el('crank').setAttribute('d','M549 425L'+p.x+' '+p.y);el('foot').setAttribute('d','M'+(p.x-4)+' '+(p.y-6)+'q4-3 9 1l14 6q-9 3-22 0z');el('pedal').setAttribute('d','M'+(p.x-6)+' '+(p.y+4)+'h27');
+ el('fill').style.transform='scaleX('+time/12+')';el('clock').textContent='00:'+String(Math.floor(time)).padStart(2,'0')+' / 00:12';
+}
+const farPath=document.createElementNS(ns,'path');el('farLeg').append(farPath);
+function label(){el('toggle').textContent=playing?'Ⅱ　暂停':'▷　播放';el('toggle').setAttribute('aria-label',playing?'暂停动画':'播放动画')}
+let frame;function loop(t){tickFrame(t);if(playing)frame=requestAnimationFrame(loop)}
+function tickFrame(t){if(last!==null)time=(time+(t-last)*rate/1000)%12;last=t;render()}
+el('toggle').onclick=()=>{playing=!playing;last=null;label();cancelAnimationFrame(frame);if(playing)frame=requestAnimationFrame(loop)};
+el('speed').onclick=()=>{rate=rate===1?1.5:rate===1.5?0.5:1;el('speed').textContent=rate+'×'};
+document.addEventListener('visibilitychange',()=>last=null);label();render();if(playing)frame=requestAnimationFrame(loop);
+</script></html>

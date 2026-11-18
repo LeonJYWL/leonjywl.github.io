@@ -6,13 +6,15 @@
 
 ## 文件结构
 
-- `index.html`：首页、分类目录、研究报告卡片、本站介绍。
+- `index.html`：首页、研究档案、AI Experiments 目录与本站介绍。
 - `assets/styles.css`：配色、排版、手机与电脑响应式布局。
+- `assets/experiments.css`：实验入口、比较表格与响应式作品展示。
+- `experiments/pelican/`：Experiment 001 的展示页与两份原始 HTML 样本。
 - `real-estate-report.pdf`：首页当前使用的房地产研究 PDF。
 - `中国四家房企财务故事（2013-2015）.pdf`：保留的另一份 PDF，不改变其路径。
 - `四家房企财务数据.xlsx`：首页下载的财务数据。
 
-网站使用原生 HTML 与 CSS，无构建步骤、JavaScript、外部字体或第三方依赖。继续使用仓库现有的 GitHub Pages 发布设置。
+网站使用静态 HTML 与 CSS，无需构建，继续使用仓库现有的 GitHub Pages 发布设置。AI 实验的交互使用 JavaScript，Gemini 原始样本需要联网加载 Tailwind CDN 与 Google Fonts。
 
 ## 预览改版
 
@@ -32,3 +34,7 @@ Pull Request 不会自动替换正式网站。审核时可在 PR 的 **Files cha
 6. 在独立分支预览并检查链接后，通过 Pull Request 审核发布。
 
 静态 HTML 保证关闭 JavaScript 后报告与导航仍可使用。报告数量增加后，可再考虑自动生成目录；目前无需安装工具或维护复杂框架。
+
+## 添加 AI 实验
+
+为每个实验选择一个稳定的目录名，在 `experiments/<目录名>/` 中放置展示页 `index.html` 与保持原文件名的样本。沿用 `assets/experiments.css` 并在首页 `#ai-experiments` 中添加入口卡片。交互样本通过各自的 iframe 加载，按内容选择适合的高度与 sandbox 权限。提交前用 `sha256sum` 核对样本和原始附件，从本地 HTTP 服务预览实验页并检查手机布局。

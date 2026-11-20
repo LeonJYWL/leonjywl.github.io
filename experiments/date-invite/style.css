@@ -339,11 +339,21 @@ h1 {
 }
 .foot {
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 12px;
   color: var(--muted);
   border-top: 1px solid var(--line);
   margin: 37px 0 0;
   padding: 17px 0;
-  font: italic 14px var(--serif);
+  font: italic 12px/1.5 var(--serif);
+}
+.foot .credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.foot > :last-child {
+  margin-inline-start: auto;
 }
 .foot b {
   font-weight: 400;
@@ -669,7 +679,6 @@ summary {
   }
   .foot {
     margin-top: 25px;
-    font-size: 12px;
   }
   .sheet {
     border-radius: 12px;

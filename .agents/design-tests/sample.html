@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究资料库 · 设计验证样张</title>
+<style>
+:root { color-scheme:light; --paper:#fafafa; --ink:#09090b; --accent:#2563eb; --muted:#475569; --line:#e4e4e7 }
+* { box-sizing:border-box }
+body { margin:0; background:var(--paper); color:var(--ink); font:1.0625rem/1.75 "Public Sans","PingFang SC","Microsoft YaHei",sans-serif }
+main { max-width:70rem; padding:clamp(1rem,4vw,3rem); margin:auto }
+h1,h2 { font-family:"Libre Bodoni","Songti SC","Noto Serif CJK SC",serif; line-height:1.3 }
+h1 { font-size:clamp(2.25rem,6vw,4.5rem); margin:.35em 0 }
+h2 { font-size:1.5rem }
+header,section { border-bottom:1px solid var(--line); padding-block:1.5rem }
+p { max-width:38em }
+a { color:var(--accent); text-underline-offset:.2em; display:inline-flex; align-items:center; min-height:44px; transition:color 150ms ease-out }
+a:hover { color:var(--ink) }
+a:focus-visible { outline:3px solid var(--ink); outline-offset:3px }
+nav { display:flex; flex-wrap:wrap; gap:1rem }
+small { color:var(--muted) }
+.grid { display:grid; gap:1.5rem }
+@media(min-width:48rem) { .grid { grid-template-columns:2fr 1fr } }
+@media(prefers-reduced-motion:reduce) { a { transition:none } }
+</style>
+<main>
+<header><small>Leon’s Research Library</small><h1>独立研究与实验</h1><p>从企业财报到 AI 图像实验，记录研究问题、方法和原始材料。</p>
+<nav aria-label="样张目录"><a href="#research">精选研究</a><a href="#experiments">AI 实验</a></nav></header>
+<div class="grid"><section id="research"><small>金融与商业 · 2013—2015</small><h2>四家房企的财务故事</h2><p>从销售、负债和现金流三个角度阅读四家企业的财务报告。阅读路径从研究问题开始，再看图表和来源。</p></section>
+<section id="experiments"><small>AI Experiments · 001</small><h2>Pelican Test</h2><p>同一条绘图指令，观察不同模型怎样理解形状和空间关系。</p></section></div>
+</main></html>

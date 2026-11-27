@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>press · U16L</title><style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font:16px/1.65 Arial,"PingFang SC","Noto Sans CJK SC",sans-serif}header,main,footer{width:min(91%,1500px);margin:auto}header,footer,.row{display:flex;align-items:center;justify-content:space-between;gap:16px}header{height:76px;border-bottom:1px solid var(--line)}.brand{font:bold 30px/1 Arial;letter-spacing:-.09em}.brand b{color:var(--accent)}a{color:inherit;text-underline-offset:4px}button,summary,a{touch-action:manipulation}button,summary{cursor:pointer}button{color:inherit;font:inherit;background:none;border:0}button,a.nav,summary{min-height:44px}.nav,summary,.micro,.control{font:600 12px/1.5 "Courier New","Noto Sans CJK SC",monospace;letter-spacing:.06em}.nav{display:inline-flex;align-items:center}.micro{text-transform:uppercase}.navs{display:flex;align-items:center;gap:22px}.brand,.nav{text-decoration:none}h1,h2,h3,p,figure{margin:0}h1{font-size:clamp(66px,8.5vw,150px);line-height:.88;letter-spacing:-.075em}h2{font-weight:500;line-height:1.1;letter-spacing:-.04em}.intro{max-width:31em;line-height:1.85}.stage{position:relative}.art{display:block;width:100%;height:100%}.control{padding:9px 16px;border:1px solid var(--line);border-radius:30px}.control[aria-pressed=true]{background:var(--ink);color:var(--bg)}.controls{display:flex;gap:6px;flex-wrap:wrap}button:hover,a:hover,summary:hover{text-decoration:underline}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.open{border-bottom:1px solid currentColor;padding:5px 0;font-weight:bold}.catalog{padding:35px 0}.catalog h2{font-size:clamp(24px,3vw,44px);margin:6px 0 24px}.item{border-top:1px solid var(--line);width:100%;display:grid;grid-template-columns:90px 1fr 1fr 36px;gap:16px;align-items:center;text-align:left;padding:16px 4px}.item strong{font-size:20px}.item i{font-family:Georgia,serif}.item .arrow{text-align:right}footer{border-top:1px solid var(--line);padding:20px 0;color:var(--ink)}dialog{background:#faf9f4;color:#252722;border:0;padding:clamp(24px,5vw,64px);width:min(640px,91%);max-height:87dvh;border-radius:12px;box-shadow:0 25px 90px #0004}dialog::backdrop{background:#111b2e88}dialog h2{font:normal clamp(32px,5vw,48px)/1.3 Georgia,"Noto Serif CJK SC",serif;margin:22px 0}dialog p{line-height:1.85;margin:12px 0}dialog a{display:inline-block;padding:10px 0}dialog button{border:1px solid;border-radius:50%;width:44px}.skip{position:absolute;left:-9999px}.skip:focus{left:6px;top:6px;background:white;color:black;z-index:10}.section-name{margin:0 auto 0 0}.desc{padding:18px 0}figure canvas{pointer-events:none}@media(max-width:700px){header{height:62px}.section-name{display:none}.navs{gap:12px}.item{grid-template-columns:48px 1fr 24px;gap:8px}.item i{display:none}.item strong{font-size:17px}.control{padding-inline:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+:root{--bg:#ff593e;--ink:#191715;--accent:#fff0ce;--line:#622c22;--focus:#072982}.poster{margin-top:20px;background:#191715;color:#fff3d6;padding:clamp(18px,3vw,48px);overflow:hidden}.poster .micro{color:#ffac8e}.cover{display:grid;grid-template-columns:.84fr 1.16fr;align-items:center;gap:10px}.cover h1{font:900 clamp(72px,9.4vw,155px)/.83 Arial;letter-spacing:-.09em}.cover h1 span{color:#ff7458}.cover .intro{margin:20px 0;max-width:24em}.cover .stage{height:clamp(310px,32vw,500px)}.strip{border-top:1px solid #847566;margin-top:15px;padding-top:15px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px}.strip .control{border-color:#ac9780;color:#fff3d6}.strip h2{font-size:clamp(21px,2.8vw,40px)}.strip .open{color:#fff3d6}.catalog h2{font-weight:900;text-transform:uppercase}.item{border-top:2px solid var(--ink)}@media(max-width:700px){.cover{display:block}.cover h1{margin-top:14px;font-size:clamp(62px,15vw,91px)}.cover .stage{height:190px}.cover .intro{margin:12px 0}.strip{grid-template-columns:1fr auto;gap:10px}.strip .controls{grid-column:1/-1}.poster{margin-top:12px}.strip h2{font-size:23px}}
+label.instrument{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:bold}input[type=range]{width:clamp(90px,13vw,190px);height:44px;accent-color:var(--accent)}input:focus-visible{outline:3px solid var(--focus)}.poster .instrument{justify-content:flex-end;color:#ffcbaf}.strip{margin-top:5px}.poster input{accent-color:#ff9f80}</style><body id="top"><a class="skip" href="#main">跳至正文</a><header><a class="brand" href="#top">U16L<b>.</b></a><span class="micro section-name">Fold press</span><div class="navs"><a class="nav" href="#catalog">作品索引</a><button class="nav" onclick="about()">关于 Leon</button></div></header><main id="main"><section class="poster"><span class="micro">U16L FOLD PRESS ／ Leon 的折页印刷所</span><div class="cover"><div><h1 lang="en">OPEN<br><span>ENDED.</span></h1><p class="intro">一张可以反复折叠的纸。把研究、代码与图形印在同一本不断增页的小刊上。</p></div><figure class="stage"><canvas class="art" aria-hidden="true"></canvas></figure></div><label class="instrument">展开纸面 <input id="crease" type="range" aria-label="折页展开程度" min="0" max="100" value="30" oninput="render()"></label><div class="strip"><div class="controls"><button class="control" aria-label="上一折" onclick="select((choice+2)%3)">←</button><button class="control" aria-label="下一折" onclick="select((choice+1)%3)">下一折 →</button></div><div aria-live="polite"><span class="micro" id="tag"></span><h2 id="current"></h2></div><button class="open" onclick="readItem(choice)">打开 ↗</button></div></section><section id="catalog" class="catalog"><h2>Print index / 印件</h2><button class="item" onclick="readItem(0)"><span class="micro">研究</span><strong>四家房企的财务故事</strong><i>Balance sheets</i><span class="arrow">↗</span></button><button class="item" onclick="readItem(1)"><span class="micro">实验</span><strong>让鹈鹕骑上自行车</strong><i>Pelican test</i><span class="arrow">↗</span></button><button class="item" onclick="readItem(2)"><span class="micro">习作</span><strong>形态发生器</strong><i>Form studies</i><span class="arrow">↗</span></button></section></main><footer><span class="micro">U16L ／ Leon</span><a href="#top">回到封面 ↑</a></footer><dialog id="reader"><div class="row"><span class="micro">U16L ／ 阅读室</span><button aria-label="关闭阅读室" onclick="reader.close()">×</button></div><div id="page"></div></dialog><script>const theme=2,entries=[["研究", "Balance sheets", "四家房企的财务故事", "2013—2015 年的财务资料，是重新理解四家房地产企业的入口。", "阅读路径", "先读报告，再对照原始数据。相同年份的并列比较，可以把规模差异和变化趋势分开看。", "https://u16l.com/real-estate-report.pdf", "阅读完整报告 PDF"], ["实验", "Pelican test", "让鹈鹕骑上自行车", "给两个模型同一条指令，观察它们怎样把一句话变成会动的图形。", "一条共同的指令", "“创建一个 HTML，内容是 SVG 绘制一个鹈鹕骑自行车的 2D 动画。” 原实验并列展示 GPT-6.2 Astra 与 Gemini 4 Argon 的实现。", "https://u16l.com/experiments/pelican/", "观看原实验"], ["习作", "Form studies", "形态发生器", "本轮原型内的程序习作。改变一个参数，观察同一组线如何长成不同形态。", "动手试一次", "回到封面，切换第三个入口，再与第一个入口比较。线条的密度、方向与重叠方式共同决定轮廓。", "", ""]];</script><script>const cv=document.querySelector("canvas"),ctx=cv.getContext("2d");
+let choice=0,frame=0,tween=1;
+const motion=matchMedia("(prefers-reduced-motion: reduce)");
+function readItem(i){
+ const e=entries[i];
+ page.innerHTML='<p class="micro">'+e[0]+' ／ '+e[1]+'</p><h2>'+e[2]+'</h2><p>'+e[3]+'</p><h3>'+e[4]+'</h3><p>'+e[5]+'</p>'+(e[6]?'<a href="'+e[6]+'">'+e[7]+' ↗</a>':'')+(i===0?'<br><a href="https://u16l.com/四家房企财务数据.xlsx">对照财务数据 XLSX ↗</a>':'');
+ reader.showModal()
+}
+function about(){page.innerHTML='<h2>关于 Leon</h2><p>U16L 是 Leon 的个人数字空间，收录金融与商业研究、AI 实验及数字创作。投资笔记、三维作品和互动工具也可以在这里继续生长。</p>';reader.showModal()}
+reader.addEventListener('click',e=>{if(e.target===reader){const r=reader.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)reader.close()}});
+function select(i,animate=true){choice=i;current.textContent=entries[i][2];tag.textContent=(theme===2?'FOLD 0'+(i+1)+' / 03 · ':'')+entries[i][1];document.querySelectorAll('.selector').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.i===i));cancelAnimationFrame(frame);const start=performance.now();function tick(t){tween=motion.matches||!animate?1:Math.min(1,(t-start)/540);render();if(tween<1)frame=requestAnimationFrame(tick)}tick(start)}
+document.querySelectorAll('.selector').forEach(b=>b.onclick=()=>select(+b.dataset.i));
+const TAU=Math.PI*2,S=Math.sin,C=Math.cos;
+function line(points,color,width=.9,fill=false){ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));if(fill){ctx.closePath();ctx.fillStyle=color;ctx.fill()}else{ctx.lineWidth=width;ctx.strokeStyle=color;ctx.stroke()}}
+function render(){
+ const r=cv.getBoundingClientRect();if(!r.width||!r.height)return;
+ const d=Math.min(1.6,devicePixelRatio);if(cv.width!==Math.round(r.width*d)||cv.height!==Math.round(r.height*d)){cv.width=Math.round(r.width*d);cv.height=Math.round(r.height*d)}
+ ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);
+ const scale=Math.min(cv.width/660,cv.height/470);ctx.translate(cv.width/2,cv.height/2);ctx.scale(scale,scale);ctx.globalAlpha=.65+.35*tween;
+ if(theme===0)ocean();else if(theme===1)garden();else fold()
+}
+function ocean(){
+ function medusa(x,y,size,angle){
+ ctx.save();ctx.translate(x,y);ctx.rotate(angle+.07*(1-tween));ctx.scale(size,size);
+ // Each latitude is a closed, rippling filament; projection flattens the rear arc.
+ for(let j=0;j<77;j++){
+ const a=.015+j/77*1.69,pts=[];
+ for(let i=0;i<=148;i++){const p=i/148*TAU,flute=1+.055*S((11+choice*2)*p+1.6*a)*S(a)**2;pts.push([155*S(a)*C(p)*flute,-113*C(a)+35*S(a)*S(p)+8*S(11*p)*S(a)**4])}
+ line(pts,'rgba(0,71,215,'+(.12+.35*j/77)+')',.95)
+ }
+ for(let j=0;j<72;j++){
+ const p=j/72*TAU,pts=[],L=107+74*(.5+.5*S(j*1.43))+choice*12;
+ for(let m=0;m<=60;m++){let t=m/60;pts.push([147*C(p)*(1-.68*t)+t*(18*S(t*9+p*2)+43*S(4*t+p))+12*S(19*t+p)*t,14+34*S(p)+t*L+5*S(8*t+p)])}
+ line(pts,j%6===0?'#005de2':'rgba(26,113,217,.38)',j%6===0?1.5:.8)
+ }ctx.restore()}
+ medusa(-196,-86,.42,-.45);medusa(60,-16,1.22,.28+.12*choice);medusa(-155,121,.33,-.26);
+}
+function garden(){
+ // Curved rachis with paired, veined lanceolate leaves.
+ function frond(x,y,len,a,n,tint){
+ ctx.save();ctx.translate(x,y);ctx.rotate(a);let stem=[];
+ for(let j=0;j<=80;j++){let t=j/80;stem.push([39*t*t,-len*t])}line(stem,'#4b5135',2.3);
+ for(let j=1;j<=n;j++){let t=j/(n+1),l=(.22+.78*S(Math.PI*t)**.72)*len*(.23+.03*choice),x=39*t*t,y=-len*t;
+ for(const sign of [-1,1]){ctx.save();ctx.translate(x,y);ctx.scale(sign,1);ctx.rotate(-.24-t*.38);let top=[],bot=[];
+ for(let m=0;m<=36;m++){let u=m/36,w=l*.15*S(Math.PI*u)**.7;top.push([u*l,-u*u*l*.4-w]);bot.push([u*l,-u*u*l*.4+w])}
+ line([...top,...bot.reverse()],tint,true,true);
+ for(let m=1;m<16;m++){let u=m/18;line([[l*u,-u*u*l*.4],[l*(u+.095),-u*u*l*.4-l*.12*S(Math.PI*u)]],'#d9dbb1',.65)}
+ ctx.restore()}}
+ ctx.restore()}
+ for(let j=0;j<6;j++){let ang=[-1.08,-.72,-.34,.08,.45,.86][j];frond(-12,185,235+100*S(j*.73)+choice*9,ang+.08*choice+.09*(1-tween),13+(choice+j)%4,['#687552','#505f40','#6b7850'][j%3])}
+}
+function fold(){
+ // Alternating front and back facets share their printed baseline.
+ const flat=Number(crease.value)/100,cols=9,ww=(450+100*flat)/cols;
+ ctx.save();ctx.rotate(-.17+.07*choice+.05*(1-tween));
+ for(let j=0;j<cols;j++){let x=-ww*cols/2+ww*j,v=j%2,top=-99+(v?37:-8)+22*S(j*.7+choice),next=-99+(v?-8:37)+22*S((j+1)*.7+choice),dep=203;top=(top+99)*(1-flat)-99;next=(next+99)*(1-flat)-99;
+ ctx.save();ctx.transform(1,(next-top)/ww,0,1,x,top);
+ ctx.fillStyle=v?['#dbb99b','#b4a6b9','#adb992'][choice]:['#fff0cf','#eadcf5','#dbefba'][choice];ctx.fillRect(0,0,ww+1,dep);
+ ctx.beginPath();ctx.rect(0,0,ww+1,dep);ctx.clip();
+ ctx.fillStyle=v?'#9c3020':'#e44428';ctx.font='900 163px Arial';ctx.save();ctx.scale(1.24,1);ctx.fillText(['U16L','TYPE','FORM'][choice],(-j*ww+8)/1.24,158);ctx.restore();
+ for(let q=0;q<11;q++){ctx.fillStyle=q%3===0?'#20211d':'#87594a';ctx.fillRect(0,173+q*1.6,ww+1,.55)}
+ ctx.fillStyle='#352e22';ctx.font='bold 10px monospace';ctx.fillText('U16L  /  EDITION     '+entries[choice][1].toUpperCase(),6-j*ww,18);
+ ctx.restore()}ctx.restore()
+}
+new ResizeObserver(render).observe(cv);select(0,false);
+</script></body></html>

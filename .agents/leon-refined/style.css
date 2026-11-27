@@ -106,3 +106,12 @@ footer a{min-height:44px;display:inline-flex;align-items:center}
  .projects-library .collection{gap:0}.entry h2{font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Keep the invitation secondary to the handwritten closing. */
+.letter .about-link{font:600 15px/1.5 var(--sans);margin-top:0}
+@media(max-width:400px){
+  .library>.mast{width:94%;padding-inline:0}
+  .library>.mast .signature{font-size:39px}
+  .library>.mast nav{gap:9px}
+  .library>.mast nav a{font-size:14px}
+}

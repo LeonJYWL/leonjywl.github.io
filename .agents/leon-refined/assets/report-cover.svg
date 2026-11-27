@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="680" viewBox="0 0 620 680">
+<defs>
+ <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#264d71"/><stop offset="1" stop-color="#102c4a"/></linearGradient>
+ <pattern id="window" width="16" height="14" patternUnits="userSpaceOnUse"><path d="M3 4h8v5H3z" fill="none" stroke="#a7c2d6"/></pattern>
+</defs>
+<rect width="620" height="680" fill="url(#sky)"/>
+<g fill="#ecf3f7" font-family="Georgia, 'Songti SC', 'Noto Serif CJK SC', serif"><text x="48" y="85" font-size="24">金融与商业</text><text x="46" y="200" font-size="60">四家房企的</text><text x="46" y="278" font-size="60">财务故事</text><text x="48" y="618" font-size="35">2013 — 2015</text></g>
+<path d="M0 540V440h46v-62l60-20v182h23V336l72-28v232h22V400l80-23v163h27V420l71-18v138h25V363l85-26v203h27V416l82-23v147z" fill="url(#window)" stroke="#c3d7e5"/>
+</svg>
